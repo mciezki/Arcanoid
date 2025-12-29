@@ -59,7 +59,7 @@ The `Ball.gd` script uses `move_and_collide` for precise collision detection.
 ## 🕹️ Controls
 
 - **Left / Right Arrow (or A / D):** Move Paddle
-- **Space / Enter:** Launch Ball / Start Game
+- **Space:** Launch Ball
 
 ## 🚀 How to Run
 
