@@ -38,11 +38,10 @@ func collision_detection(collision: KinematicCollision2D, ball: Ball) -> void:
 		
 		if collider is Diamond:
 			collider.destroy_diamond()
-			Main.diamonds -= 1
 		
 		if collider is Sapphire:
 			collider.destroy_sapphire(ball)
-			Main.sapphires -= 1
+			
 
 #_________________
 
