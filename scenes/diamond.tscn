@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://cc5wwlye6ixo3"]
+
+[ext_resource type="Texture2D" uid="uid://ds5mhvrv27c8u" path="res://assets/arts/diamond.png" id="1_0a7ml"]
+[ext_resource type="Script" uid="uid://c65322xip2hoj" path="res://scripts/diamond.gd" id="1_okr8r"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_okr8r"]
+size = Vector2(32, 32)
+
+[node name="Diamond" type="StaticBody2D" groups=["diamonds"]]
+scale = Vector2(0.5, 0.5)
+collision_layer = 2
+collision_mask = 8
+script = ExtResource("1_okr8r")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_0a7ml")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_okr8r")

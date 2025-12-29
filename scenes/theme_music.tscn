@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://bde7hod0lv1tj"]
+
+[ext_resource type="AudioStream" uid="uid://dlj1mbvux7wx7" path="res://assets/music/theme.mp3" id="1_kqutg"]
+
+[node name="ThemeMusic" type="AudioStreamPlayer2D"]
+process_mode = 3
+stream = ExtResource("1_kqutg")
+autoplay = true
+parameters/looping = true

@@ -1,0 +1,10 @@
+[gd_scene load_steps=4 format=3 uid="uid://lh204vl173g3"]
+
+[ext_resource type="Script" uid="uid://rdti4baofkj7" path="res://scripts/stones_spawner.gd" id="1_eh65p"]
+[ext_resource type="PackedScene" uid="uid://cc5wwlye6ixo3" path="res://scenes/diamond.tscn" id="2_qxbjk"]
+[ext_resource type="PackedScene" uid="uid://b1g1fotvonam2" path="res://scenes/sapphire.tscn" id="3_80rku"]
+
+[node name="StonesSpawner" type="Node2D"]
+script = ExtResource("1_eh65p")
+diamond_scene = ExtResource("2_qxbjk")
+sapphire_scene = ExtResource("3_80rku")

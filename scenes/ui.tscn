@@ -1,0 +1,72 @@
+[gd_scene load_steps=8 format=3 uid="uid://d1upnse34eerg"]
+
+[ext_resource type="Script" uid="uid://dgn1jxp4pptfe" path="res://scripts/ui.gd" id="1_p7vwb"]
+[ext_resource type="Texture2D" uid="uid://b0uqltc3u3261" path="res://assets/arts/left-hud-border.png" id="2_ktti3"]
+[ext_resource type="Texture2D" uid="uid://c1cteqnkg4okd" path="res://assets/arts/right-hud-border.png" id="3_cgfq5"]
+[ext_resource type="Texture2D" uid="uid://fp3g1o5t6u3h" path="res://assets/arts/center-hud-border.png" id="4_7dvkv"]
+[ext_resource type="Texture2D" uid="uid://dakp481yrkak8" path="res://assets/arts/ball.png" id="5_vdcm2"]
+[ext_resource type="Texture2D" uid="uid://ds5mhvrv27c8u" path="res://assets/arts/diamond.png" id="6_6rmj2"]
+[ext_resource type="Texture2D" uid="uid://bcy4rlfyhflnp" path="res://assets/arts/sapphire.png" id="7_vsj0x"]
+
+[node name="UI" type="CanvasLayer"]
+script = ExtResource("1_p7vwb")
+
+[node name="DiamondsContainer" type="CanvasLayer" parent="."]
+layer = 5
+
+[node name="Diamond" type="Sprite2D" parent="DiamondsContainer"]
+position = Vector2(81, 15)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("6_6rmj2")
+
+[node name="DiamondsLabel" type="Label" parent="DiamondsContainer"]
+offset_left = 92.0
+offset_top = 4.0
+offset_right = 132.0
+offset_bottom = 27.0
+
+[node name="SapphiresContainer" type="CanvasLayer" parent="."]
+layer = 5
+
+[node name="Sapphire" type="Sprite2D" parent="SapphiresContainer"]
+position = Vector2(153, 15)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("7_vsj0x")
+
+[node name="SapphiresLabel" type="Label" parent="SapphiresContainer"]
+offset_left = 164.0
+offset_top = 4.0
+offset_right = 204.0
+offset_bottom = 27.0
+
+[node name="BallsContainer" type="CanvasLayer" parent="."]
+layer = 5
+
+[node name="Ball" type="Sprite2D" parent="BallsContainer"]
+top_level = true
+position = Vector2(19, 15)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("5_vdcm2")
+
+[node name="BallsLabel" type="Label" parent="BallsContainer"]
+offset_left = 28.0
+offset_top = 3.0
+offset_right = 68.0
+offset_bottom = 26.0
+
+[node name="LeftBorder" type="NinePatchRect" parent="."]
+offset_right = 40.0
+offset_bottom = 32.0
+texture = ExtResource("2_ktti3")
+
+[node name="RightBorder" type="NinePatchRect" parent="."]
+offset_left = 664.0
+offset_right = 704.0
+offset_bottom = 32.0
+texture = ExtResource("3_cgfq5")
+
+[node name="CenterBorder" type="NinePatchRect" parent="."]
+offset_left = 40.0
+offset_right = 664.0
+offset_bottom = 32.0
+texture = ExtResource("4_7dvkv")
