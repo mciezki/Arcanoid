@@ -20,6 +20,7 @@ Every playthrough offers a unique challenge as the level layout is automatically
   <img src="screenshots/gameplay_one.png" alt="Gameplay Early" width="30%">
   <img src="screenshots/gameplay_two.png" alt="Gameplay Mid" width="30%">
   <img src="screenshots/gameplay_three.png" alt="Gameplay Chaos" width="30%">
+  <p align="center" width="100%"><i>(Original pixel art - simple, but everyone has to start somewhere ;>)</i></p>
 </p>
 
 ## ⚙️ Technical Deep Dive
